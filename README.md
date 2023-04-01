@@ -1,4 +1,4 @@
-# MobWarn
+# MobRank
 This addon adds additional information to the tooltip for dangerous mobs.   
 
 - Shows the number of players killed by the mob.
@@ -7,4 +7,6 @@ This addon adds additional information to the tooltip for dangerous mobs.
 
 Data provided by [Wow Turtle HC Stats](hswowturtle.com).
 
-![preview](https://raw.githubusercontent.com/GryllsAddons/AddonPreviews/main/MobWarn/MobWarn1.png)
+![preview](https://github.com/GryllsAddons/AddonPreviews/blob/main/MobRank/MobRank1.png)
+
+![preview](https://github.com/GryllsAddons/AddonPreviews/blob/main/MobRank/MobRank2.png)
