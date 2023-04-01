@@ -1,0 +1,8 @@
+## Interface: 11200
+## Title: MobWarn
+## Author: Grylls
+## Notes: Displays a tooltip for dangerous mobs (data from DangerousMobs by kissoncheg)
+## Version: 1
+
+MobWarn.lua
+MobWarnMobs.lua
