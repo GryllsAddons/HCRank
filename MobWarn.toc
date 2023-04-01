@@ -1,7 +1,7 @@
 ## Interface: 11200
 ## Title: MobWarn
 ## Author: Grylls
-## Notes: Displays a tooltip for dangerous mobs (data from DangerousMobs by kissoncheg)
+## Notes: Displays a tooltip for players killed by mobs (data from hswowturtle.com)
 ## Version: 1
 
 MobWarn.lua
