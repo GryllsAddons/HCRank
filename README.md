@@ -1,9 +1,9 @@
 # MobRank
-This addon adds additional information to the tooltip for dangerous mobs.   
+This addon adds additional information to the tooltip for dangerous mobs and players.   
 
-- Shows the number of players killed by the mob.
-- Shows the mob rank (top 100 deadliest mobs).
-- The text will be colored red to yellow based on the mob rank.
+- Shows the number of players killed by the mob/player.
+- Shows the mob rank (top 100 deadliest mobs/players).
+- The text will be colored red to yellow based on the mob/player rank.
 
 Data provided by [Wow Turtle HC Stats](http://hswowturtle.com).
 
