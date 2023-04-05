@@ -5,7 +5,7 @@ This addon adds additional information to the tooltip for dangerous mobs and pla
 - Shows the mob rank (top 100 deadliest mobs/players).
 - The text will be colored red to yellow based on the mob/player rank.
 
-Data provided by [Wow Turtle HC Stats](http://hswowturtle.com).
+Data provided by [hswowturtle](http://hswowturtle.com).
 
 ![preview](https://github.com/GryllsAddons/AddonPreviews/blob/main/MobRank/MobRank1.png)
 
