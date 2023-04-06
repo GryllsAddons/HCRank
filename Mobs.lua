@@ -518,11 +518,23 @@ function MobRank.loadMobs()
     local level = UnitLevel("player")
     if (level <= 20) then
         MobRank.mobs = MobRank.mobs_1020
-    elseif (level <= 30) then
+        MobRank.mobs_2130 = {}
+        MobRank.mobs_3140 = {}
+        MobRank.mobs_4159 = {}
+    elseif (level <= 30) then        
+        MobRank.mobs_1020 = {}
         MobRank.mobs = MobRank.mobs_2130
-    elseif (level <= 40) then
+        MobRank.mobs_3140 = {}
+        MobRank.mobs_4159 = {}
+    elseif (level <= 40) then        
+        MobRank.mobs_1020 = {}
+        MobRank.mobs_2130 = {}
         MobRank.mobs = MobRank.mobs_3140
-    elseif (level <= 59) then
+        MobRank.mobs_4159 = {}
+    elseif (level <= 59) then        
+        MobRank.mobs_1020 = {}
+        MobRank.mobs_2130 = {}
+        MobRank.mobs_3140 = {}
         MobRank.mobs = MobRank.mobs_4159
     else
         MobRank.mobs = {}

@@ -22,24 +22,18 @@ MobRank:SetScript("OnEvent", function()
   if (event == "UPDATE_MOUSEOVER_UNIT") then
     local name = UnitName("mouseover")
     local player = UnitIsPlayer("mouseover")
-    local mob, rank, kills, color
+    local mob
 
     if player then
       mob = MobRank.players[name]
-      if mob then
-        rank = MobRank.players[name]["Rank"]
-        kills = MobRank.players[name]["Kills"]
-      end
     else
       mob = MobRank.mobs[name]
-      if mob then
-        rank = MobRank.mobs[name]["Rank"]
-        kills = MobRank.mobs[name]["Kills"]        
-      end
     end
 
-    if mob then
-      color = colorRank(rank)   
+    if mob then      
+      local kills = mob["Kills"]
+      local rank = mob["Rank"]
+      local color = colorRank(rank)   
       GameTooltip:AddLine("Players Killed: " .. kills)
       GameTooltip:AddLine("|cff" .. color .. "Mob Rank: " .. rank .. "|r")
       GameTooltip:Show()
