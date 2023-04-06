@@ -536,7 +536,11 @@ function MobRank.loadMobs()
         MobRank.mobs_2130 = {}
         MobRank.mobs_3140 = {}
         MobRank.mobs = MobRank.mobs_4159
-    else
+    else        
+        MobRank.mobs_1020 = {}
+        MobRank.mobs_2130 = {}
+        MobRank.mobs_3140 = {}
+        MobRank.mobs_4159 = {}
         MobRank.mobs = {}
         MobRank.players = {}
     end
