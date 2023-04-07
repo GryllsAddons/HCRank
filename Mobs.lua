@@ -1,5 +1,5 @@
 
-function MobRank.loadMobs()
+function MobRank.Data()
     MobRank.mobs_1020 = {
         ["Defias Bodyguard"] = {["Rank"] = 1,["Kills"] = 242},
         ["Defias Highwayman"] = {["Rank"] = 2,["Kills"] = 166},
@@ -514,23 +514,4 @@ function MobRank.loadMobs()
         ["Catfat"] = {["Rank"] = 99,["Kills"] = 1},
         ["Shiimanee"] = {["Rank"] = 100,["Kills"] = 1},
     }
-    
-    local level = UnitLevel("player")
-    if (level <= 20) then
-        MobRank.mobs = MobRank.mobs_1020        
-    elseif (level <= 30) then
-        MobRank.mobs = MobRank.mobs_2130
-    elseif (level <= 40) then
-        MobRank.mobs = MobRank.mobs_3140
-    elseif (level <= 59) then
-        MobRank.mobs = MobRank.mobs_4159
-    else
-        MobRank.mobs = {}
-        MobRank.players = {}
-    end
-
-    MobRank.mobs_1020 = {}
-    MobRank.mobs_2130 = {}
-    MobRank.mobs_3140 = {}
-    MobRank.mobs_4159 = {}
 end
