@@ -55,7 +55,8 @@ MobRank:SetScript("OnEvent", function()
     if mob then      
       local kills = mob["Kills"]
       local rank = mob["Rank"]
-      local color = colorRank(rank)   
+      local color = colorRank(rank)
+      GameTooltip:AddLine(" ")
       GameTooltip:AddLine("Players Killed: " .. kills)
       GameTooltip:AddLine("|cff" .. color .. "Mob Rank: " .. rank .. "|r")
       GameTooltip:Show()
