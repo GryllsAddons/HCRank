@@ -1,6 +1,6 @@
 MobRank = CreateFrame("Frame", nil, UIParent)
+MobRank:RegisterEvent("ADDON_LOADED")
 MobRank:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
-MobRank:RegisterEvent("PLAYER_ENTERING_WORLD")
 MobRank:RegisterEvent("PLAYER_LEVEL_UP")
 
 local function colorRank(rank)
