@@ -1,7 +1,7 @@
 MobRank = CreateFrame("Frame", nil, UIParent)
-MobRank:RegisterEvent("ADDON_LOADED")
-MobRank:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
+MobRank:RegisterEvent("PLAYER_ENTERING_WORLD")
 MobRank:RegisterEvent("PLAYER_LEVEL_UP")
+MobRank:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
 
 local function colorRank(rank)
   -- https://colorkit.co/gradient-palette/ff0000-f7ef00/?steps=4
@@ -19,7 +19,7 @@ local function colorRank(rank)
 end
 
 local function LoadData()
-  MobRank.Data()
+  MobRank.Data()  
   local level = UnitLevel("player")
     if (level <= 20) then
         MobRank.mobs = MobRank.mobs_1020        
@@ -30,14 +30,13 @@ local function LoadData()
     elseif (level <= 59) then
         MobRank.mobs = MobRank.mobs_4159
     else
-        MobRank.mobs = {}
-        MobRank.players = {}
+        MobRank.mobs = nil
     end
 
-    MobRank.mobs_1020 = {}
-    MobRank.mobs_2130 = {}
-    MobRank.mobs_3140 = {}
-    MobRank.mobs_4159 = {}
+    MobRank.mobs_1020 = nil
+    MobRank.mobs_2130 = nil
+    MobRank.mobs_3140 = nil
+    MobRank.mobs_4159 = nil
 end
 
 MobRank:SetScript("OnEvent", function()
@@ -48,7 +47,7 @@ MobRank:SetScript("OnEvent", function()
 
     if player then
       mob = MobRank.players[name]
-    else
+    elseif MobRank.mobs then
       mob = MobRank.mobs[name]
     end
 
@@ -56,7 +55,6 @@ MobRank:SetScript("OnEvent", function()
       local kills = mob["Kills"]
       local rank = mob["Rank"]
       local color = colorRank(rank)
-      GameTooltip:AddLine(" ")
       GameTooltip:AddLine("Players Killed: " .. kills)
       GameTooltip:AddLine("|cff" .. color .. "Mob Rank: " .. rank .. "|r")
       GameTooltip:Show()
@@ -65,3 +63,5 @@ MobRank:SetScript("OnEvent", function()
     LoadData()
   end
 end)
+
+DEFAULT_CHAT_FRAME:AddMessage("|cfffc5100MobRank Loaded!|r")
