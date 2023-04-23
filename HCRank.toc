@@ -1,0 +1,8 @@
+## Interface: 11200
+## Title: HCRank
+## Author: Grylls
+## Notes: Adds Turtle WoW hardcore death information to the tooltip for dangerous mobs and players (data provided by hswowturtle.com)
+## Version: 1
+
+HCRank.lua
+Data.lua
