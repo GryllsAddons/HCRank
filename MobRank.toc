@@ -1,8 +1,0 @@
-## Interface: 11200
-## Title: MobRank
-## Author: Grylls
-## Notes: Adds additional information to the tooltip for dangerous mobs and players (data provided by hswowturtle.com)
-## Version: 1
-
-MobRank.lua
-Mobs.lua
