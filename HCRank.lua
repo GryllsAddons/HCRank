@@ -27,13 +27,12 @@ end
 
 HCRank:SetScript("OnEvent", function()
   if (event == "UPDATE_MOUSEOVER_UNIT") then
-    if not (HCRank.players or HCRank.mobs) then return end
     local mob
     local name = UnitName("mouseover")
     
     if UnitIsPlayer("mouseover") then
       mob = HCRank.players[name]
-    else
+    elseif HCRank.mobs then
       mob = HCRank.mobs[name]
     end
 
