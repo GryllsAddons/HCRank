@@ -49,4 +49,4 @@ HCRank:SetScript("OnEvent", function()
   end
 end)
 
-DEFAULT_CHAT_FRAME:AddMessage("|cfffc5100HCRank Loaded!|r")
+DEFAULT_CHAT_FRAME:AddMessage("HCRank Loaded!", 1, 0.5, 0)
