@@ -1,5 +1,6 @@
 # HCRank
-Adds Turtle WoW hardcore death information to the tooltip for dangerous mobs and players (data provided by [hswowturtle](https://hswowturtle.com)).
+Adds Turtle WoW hardcore death information to the tooltip for dangerous mobs and players.    
+Data provided by [hswowturtle](https://hswowturtle.com).
 
 - Shows the number of players killed by the mob or player.
 - Shows the rank (top 100 deadliest mobs or players).
