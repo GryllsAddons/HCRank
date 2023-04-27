@@ -11,3 +11,5 @@ Data provided by [hswowturtle](https://hswowturtle.com).
 ![preview](https://github.com/GryllsAddons/AddonPreviews/blob/main/MobRank/MobRank1.png)
 
 ![preview](https://github.com/GryllsAddons/AddonPreviews/blob/main/MobRank/MobRank2.png)
+
+For information about mob abilities in the tooltip, please see [codex](https://github.com/nakda/codex).
